@@ -5,7 +5,7 @@ const btnAgregar = document.getElementById("btnAgregar");
 const inputActividad = document.getElementById("actividadInput");
 const listaActividades  = document.getElementById("listaActividades");
 const mensajeVacio = document.getElementById("mensajeVacio");
-
+const year = document.getElementById("year");year.textContent = new Date().getFullYear();
 const totalActividades = document.getElementById("totalActividades");
 const actividadesRealizadas = document.getElementById("totalActividadesRealizadas"); 
 const actividadesPendientes = document.getElementById("totalActividadesPendientes");
@@ -19,7 +19,7 @@ inputActividad.addEventListener("keypress", function (evento){
    }
 });
 
-// Función principal para agregar una actividad
+// Función principal para agregar una activ
 function agregarActividad(){
    const textoActividad = inputActividad.value.trim();
 
